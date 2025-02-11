@@ -21,24 +21,4 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => console.error("Помилка:", error));
         });
     });
-
-    // document.querySelectorAll(".delete-task").forEach(button => {
-    //     button.addEventListener("click", function() {
-    //         let taskId = this.dataset.id;
-
-    //         fetch(`/delete/${taskId}/`, {
-    //             method: "POST",
-    //             headers: {
-    //                 "X-CSRFToken": "{{ csrf_token }}"
-    //             }
-    //         })
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             let task = document.getElementById(`task-${taskId}`);
-    //             if (task) {
-    //                 task.remove();
-    //             }
-    //         });
-    //     });
-    // });
 });
